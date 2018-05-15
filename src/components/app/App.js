@@ -24,13 +24,23 @@ class App extends Component {
 
 
     // this.state.use = event.target.value;
-    this.setState({ user: event.target.value });
+    this.setState({
+      user: {
+        ...this.state.user,
+        name: event.target.value,
+      }
+    });
   };
 
   cityChange = (event) => {
     console.log('event.target', event.target.value);
 
-    this.setState({ city: event.target.value });
+    this.setState({
+      user: {
+        ...this.state.user,
+        city: event.target.value,
+      }
+    });
   };
 
   logIt = () => {
