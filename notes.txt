@@ -1,0 +1,1 @@
+Local State - javascript that only exists within the specific component
