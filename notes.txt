@@ -1,1 +1,12 @@
 Local State - javascript that only exists within the specific component
+
+Things inside of curly brackets in jsx are javascript
+
+Currying: A function that returns a function
+
+Dot Notation: this.state
+
+Bracket Notation: this['state']
+ -- If we want a property to be variable, we must use bracket notation!!!
+
+ SPA = Single Page Application
