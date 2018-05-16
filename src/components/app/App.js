@@ -71,8 +71,6 @@ class App extends Component {
 
   render() {
 
-    let updatedUserList = this.state.userList.map(user => <li key={user.name}>{user.name} is from {user.city}, zip code {user.zip}</li>);
-
     return (
       <div>
         The current user is {this.state.user.name}. S/he is from {this.state.user.city}, where the zip code is {this.state.user.zip}
@@ -84,7 +82,7 @@ class App extends Component {
         </form>
 
         <ul>
-          {updatedUserList}
+          {this.state.userList.map(user => <li key={user.name}>{user.name} is from {user.city}, zip code {user.zip}</li>)}
         </ul>
       </div>
     );
